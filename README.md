@@ -112,17 +112,12 @@ $ python --version
 ### Install the Dependencies
 
 There's a shell script that contains all the commands you need. As a result, make sure you are in the main directory and then simply run these commands:
-```
-$ chmod +x ./bin/install.sh
-```
 
 ```
 $ ./bin/install.sh
 ```
 
-```
-$ source env/bin/activate
-```
+
 
 <!-- USAGE EXAMPLES -->
 ### Run the Project
@@ -134,9 +129,6 @@ Make sure you are already in the Python virtual environment
 $ source env/bin/activate
 ```
 
-```
-$ chmod +x ./bin/run.sh
-```
 
 ```
 $ ./bin/run.sh
