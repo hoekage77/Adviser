@@ -110,6 +110,16 @@ $ python --version
 ```
 
 ### Install the Dependencies
+Download the Repo
+
+Run 
+```
+git clone https://github.com/hoekage77/adviser.git
+```
+
+```
+cd adviser
+```
 
 There's a shell script that contains all the commands you need. As a result, make sure you are in the main directory and then simply run these commands:
 
@@ -124,6 +134,9 @@ $ ./bin/install.sh
 
 To run the website locally, follow these following steps:
 
+```
+cd adviser
+```
 Make sure you are already in the Python virtual environment
 ```
 $ source env/bin/activate
