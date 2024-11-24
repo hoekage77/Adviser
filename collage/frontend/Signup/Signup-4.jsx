@@ -11,11 +11,12 @@ const Signup3 = ({setResumeFile, setTranscriptFile}) => {
   return (
     <div className='dropZone'>
     <Text size="xl">Upload your resume:</Text>
-    <Dropzone
+    <p>Temporarily down :(</p>
+    {/* <Dropzone
       multiple={false}
       style={{height: "40%", color: '#5d5d5d' }}
-      onDrop={(files) => {console.log('accepted files', files); setResume(files); setResumeFile(files[0]); setResumeText('Current file: ' + files[0].path);}}
-      onReject={(files) => console.log('rejected files', files)}
+      onDrop={(files) => { setResume(files); setResumeFile(files[0]); setResumeText('Current file: ' + files[0].path);}}
+      // onReject={(files) => console.log('rejected files', files)}
       maxSize={5 * 1024 ** 2}
       accept={PDF_MIME_TYPE}
     >
@@ -42,13 +43,14 @@ const Signup3 = ({setResumeFile, setTranscriptFile}) => {
             {resumeText}
           </Text>
       </Group>
-    </Dropzone>
+    </Dropzone> */}
     <Text size="xl">Upload your transcript:</Text>
-    <Dropzone
+    <p>Temporarily down :(</p>
+    {/* <Dropzone
       multiple={false}
       style={{height: "40%", color: '#5d5d5d' }}
-      onDrop={(files) => {console.log('accepted files', files); setTranscript(files); setTranscriptFile(files[0]); setTranscriptText('Current file: ' + files[0].path);}}
-      onReject={(files) => console.log('rejected files', files)}
+      onDrop={(files) => { setTranscript(files); setTranscriptFile(files[0]); setTranscriptText('Current file: ' + files[0].path);}}
+      // onReject={(files) => console.log('rejected files', files)}
       maxSize={5 * 1024 ** 2}
       accept={PDF_MIME_TYPE}
     >
@@ -75,7 +77,7 @@ const Signup3 = ({setResumeFile, setTranscriptFile}) => {
             {transcriptText}
           </Text>
       </Group>
-    </Dropzone>
+    </Dropzone> */}
     </div>
   );
   // two file inputs using the dropzone extension

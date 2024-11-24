@@ -1,0 +1,88 @@
+/* I literally have not seen how this looks like */
+
+.nav-bar-followers {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+}
+
+.nav-bar-followers h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nav-bar-followers p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.followers-list {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.user-result-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.network-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ddd;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user-details {
+    font-size: 14px;
+    color: #888;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.view-profile-button,
+.remove-button {
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: red;
+    background: none;
+    transition: background 0.3s ease;
+}
+
+.view-profile-button:hover,
+.remove-button:hover {
+    background: #ffe6e6;
+}

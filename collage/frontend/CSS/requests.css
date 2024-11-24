@@ -1,0 +1,67 @@
+.request {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 632px;
+    min-height: 72px;
+}
+
+.info {
+    width: 230px;
+    margin-right: 18px;
+}
+
+.headshot {
+    max-width: 57px;
+    max-height: 57px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282828;
+}
+
+.basic {
+    font-size: 12px;
+    color: #242424;
+
+}
+
+.handle {
+    font-weight: 600;
+}
+
+.subtext {
+    font-size: 12px;
+    color: #717171;
+}
+
+.timer {
+    min-width: 30px;
+    color: #717171;
+    margin-right: 10%;
+}
+
+.buttons {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.button {
+    border-radius: 30px;
+    padding: 6px 12px;
+}
+
+.approve {
+    margin-right: 20px;
+    background-color: #B8FFC8;
+    color: black
+}
+
+.reject {
+    border: 1px #FF7575 solid;
+}

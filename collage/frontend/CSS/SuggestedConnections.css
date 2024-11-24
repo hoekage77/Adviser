@@ -1,0 +1,131 @@
+.suggested-connections-container {
+    height: 453px;
+    width: 522px;
+    background-color: #ffffff;
+    border-radius: 31px;
+    text-align: left;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    border: 1px solid #c3c3c3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 45px;
+}
+
+.suggested-connections-header {
+    background-color: #f0f4ff;
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #c3c3c3;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.suggested-connections-header h2 {
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    padding-top: 15px;
+}
+
+.suggested-connections-header p {
+    margin: 10px 20px;
+    font-size: 0.8em;
+    color: #666666;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.suggested-connection-profile {
+    background-color: #f7f7f7;
+    border-radius: 31px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.profile-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333333;
+}
+
+.profile-major {
+    font-size: 0.85em;
+    color: #777777;
+}
+
+.follow-button {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    color: #333333;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.follow-button:hover {
+    background-color: #f0f0f0;
+}
+
+.suggested-connections-footer {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 10px 20px;
+}
+
+.footer-images {
+    display: flex;
+    padding-left: 5%;
+    gap: 10px;
+}
+
+.footer-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: #8DADFF;
+
+}
+
+.footer-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    padding-right: 5%;
+}
+
+.footer-text p {
+    font-size: 14px;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.explore-more-link {
+    color: #8DADFF;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.explore-more-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

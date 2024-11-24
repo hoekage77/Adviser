@@ -1,0 +1,52 @@
+.courses {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.course {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border: 1px #A7a7a7 solid;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 80px;
+    min-height: 80px;
+    padding: 10px;
+}
+
+.saved-text {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.saved-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saved-course-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }

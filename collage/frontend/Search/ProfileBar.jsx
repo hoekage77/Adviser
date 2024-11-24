@@ -1,45 +1,32 @@
 import React, {useState, useEffect} from "react";
-import { Link, Image } from '@mantine/core';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { Image } from '@mantine/core';
 import profPic from '../images/prof-pic.jpg';
 import fullLogo from '../images/full-logo.png';
 import '../CSS/ProfBar.css';
 
-const Profile = ({ userId, operation }) => {
-  // const [data, setData] = useState(null);
-  // const [error, setError] = useState(null);
+const Profile = ({ currentUser }) => {
+  const [data, setData] = useState(null);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(`/api/student/${userId}?operation=${operation}`);
-  //       const result = await response.json();
-  //       if (response.ok ){
-  //         setData(result);
-  //       } else{
-  //         setError(result.error);
-  //       }
-  //     } catch (error) {
-  //       setError(error.toString());
-  //     }
-  //   };
-  //   fetchData();
-  // }, [userId, operation])
-
-  // if (error){
-  //   return <div>Error: {error}</div>;
-  // }
-
-  // if (!data){
-  //   return <div>Loading...</div>;
-  // }
+  useEffect(() => {
+    axios.get(`/api/student/${currentUser.id}`, {
+      headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${Cookies.get('access_token')}`,
+      },
+  })
+    .then((response) => setData(response))
+    .catch((err) => console.error(err))
+  }, [currentUser.id])
 
   return(
-    <div>
+    <div className='side'>
       <div className="background-container">
         <div className="gray-part"></div>
 
         <div className="full-bar">
-          <div className="header-container">
+          <div className="prof-header-container">
             <Image src={ fullLogo } className="collage-header"/>
             <Image radius="md" src={profPic} className="prof-pic" /> 
           </div>
@@ -54,7 +41,7 @@ const Profile = ({ userId, operation }) => {
             </div>
 
             <div className="social-stats">
-              <p>858</p>
+              <p>{data.profile_viewers}</p>
               <p>1,025</p>
             </div>
           </div>
@@ -79,6 +66,9 @@ const Profile = ({ userId, operation }) => {
             <p style={{ textAlign: "center", fontSize: "1.3rem", marginBottom: "15px"}}>Registration Date:</p>
             <p style={{ textAlign: "center" }} className="registration-time">November 28th at 3:00pm</p>
           </div>
+          {/* <Link to="/UserProfile">
+            <button>UserProfile</button>
+          </Link> */}
         </div>
       </div>
     </div>

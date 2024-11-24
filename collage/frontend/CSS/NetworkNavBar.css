@@ -1,0 +1,93 @@
+/* Wrapper for navbar and content */
+.network-navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    max-width: 710px;
+    /* margin: auto; */
+}
+
+/* Navbar container */
+.network-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 0.52px solid #c3c3c3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Content area where the tab-specific components are rendered */
+.content-area {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0.52px solid;
+    border-color: #c3c3c3;
+    border-radius: 10px;
+    height: 800px;
+}
+
+/* Styling for nav buttons */
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    color: #414040;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Default styles for active and hover states */
+.nav-button:hover {
+    color: #000;
+}
+
+/* Tab specific highlight colors */
+.blue-highlight {
+    background-color: #8dadff;
+    color: #424b5b;
+    align-items: center;
+    background-color: #8dadff;
+    border: 0.5px solid;
+    border-color: #424b5b;
+    border-radius: 30px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.red-highlight {
+    color: #404040;
+    align-items: center;
+    background-color: #ff7c7c;
+    border: 0.5px solid;
+    border-color: #6d3636;
+    border-radius: 30px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.green-highlight {
+    background-color: #bfffc5;
+    color: #3f5c41;
+    align-items: center;
+    border: 0.5px solid;
+    border-color: #3f5c41;
+    border-radius: 30px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 12px;
+    position: relative;
+}
